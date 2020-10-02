@@ -1,0 +1,38 @@
+[
+  {
+    "name": "customer one",
+    "items": "3",
+    "totalAmount": "300",
+    "orderStatus": "Order Received",
+    "info": "We have received your order",
+    "details": {
+      "itemName": "pizza large",
+      "itemPrice": "100",
+      "deliveryAddress": "hitech city, hyderabad"
+    }
+  },
+  {
+    "name": "customer two",
+    "items": "3",
+    "totalAmount": "300",
+    "orderStatus": "Order Received",
+    "info": "We have received your order",
+    "details": {
+      "itemName": "pizza double large",
+      "itemPrice": "100",
+      "deliveryAddress": "hitech city, hyderabad"
+    }
+  },
+  {
+    "name": "customer three",
+    "items": "3",
+    "totalAmount": "300",
+    "orderStatus": "Order Received",
+    "info": "We have received your order",
+    "details": {
+      "itemName": "pizza double large max",
+      "itemPrice": "100",
+      "deliveryAddress": "hitech city, hyderabad"
+    }
+  }
+]

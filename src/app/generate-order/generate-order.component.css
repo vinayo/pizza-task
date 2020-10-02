@@ -1,0 +1,25 @@
+.containerBox{
+    max-width:500px;
+    margin: auto;
+    border:1px solid lightgray;
+    border-radius:4px;
+    padding: 30px;
+    
+}
+.orderStatus{
+    background-color:#f1f1f1;
+    padding: 20px;
+}
+.btn{
+    background-color: red;
+    padding: 15px;
+    border:0px;
+}
+.btn:hover,.btn:active,.btn:focus{
+    background-color: red !important;
+    border-color:#ffffff !important;
+    box-shadow: 0 0 0 0.2rem rgb(255 255 255 / 50%) !important;
+}
+.dataClr{
+    font-weight: 600;
+}

@@ -1,0 +1,89 @@
+<div class="containerBox mb-5" *ngFor="let data of userDtails">
+  <div class="col-12" (click)="showDetails(data)">
+    <div class="row">
+      <div class="col-12">
+        <div class="row">
+          <div class="col-4">
+            <div>Name</div>
+            <div class="dataClr">{{data.name}}</div>
+          </div>
+          <div class="col-4">
+            <div>Total Items</div>
+            <div class="dataClr">{{data.items}}</div>
+          </div>
+          <div class="col-4">
+            <div>Total Amount</div>
+            <div class="dataClr">{{data.totalAmount}}</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 mt-4 orderStatus">
+        <div class="col-12">
+          <div class="row">
+            <div class="col-1">
+              <img src="assets/images/tick.png" width="20px">
+            </div>
+            <div class="col-11">
+              <h6 class="mb-0">{{data.orderStatus}}</h6>
+              <small>{{data.info}}</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-12 p-0 mt-5">
+    <button class="btn btn-primary w-100 dataClr" (click)="changeStatus(data)">
+      Change Status
+    </button>
+  </div>
+</div>
+<div class="modal" id="myModal" [style.display]="showModal ? 'block' : 'none'">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h6 class="modal-title" id="modal-basic-title">Order Details</h6>
+        <button type="button" class="close" aria-label="Close" data-dismiss="modal" (click)="hide()">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="col-12">
+          <div class="row">
+            <div class="col-6">
+              <div>Item Name:</div>
+            </div>
+            <div class="col-6">
+              <div>{{selectedOrder?.details?.itemName}}</div>
+            </div>
+            <div class="col-6">
+              <div>Item Price:</div>
+            </div>
+            <div class="col-6">
+              <div>{{selectedOrder?.details?.itemPrice}}</div>
+            </div>
+            <div class="col-6">
+              <div>Total Amount:</div>
+            </div>
+            <div class="col-6">
+              <div>{{selectedOrder?.totalAmount}}</div>
+            </div>
+            <div class="col-6">
+              <div>Customer Name:</div>
+            </div>
+            <div class="col-6">
+              <div>{{selectedOrder?.name}}</div>
+            </div>
+            <div class="col-6">
+              <div>Delivery Address:</div>
+            </div>
+            <div class="col-6">
+              <div>{{selectedOrder?.details?.deliveryAddress}}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

@@ -3,14 +3,16 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { GenerateOrderComponent } from './generate-order/generate-order.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    GenerateOrderComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
